@@ -15,7 +15,7 @@ threshold = 4
 GPIO.setup(pin, GPIO.OUT, initial=GPIO.LOW)
 
 # toggle pin on/off till loop ends.
-while counter < threshold
+while (counter < threshold):
  GPIO.output(pin, GPIO.HIGH)
  time.sleep(waitingTime); 
  GPIO.output(pin, GPIO.LOW)
