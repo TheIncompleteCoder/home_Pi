@@ -19,6 +19,7 @@ while (counter < threshold):
  GPIO.output(pin, GPIO.HIGH) #setting pin output as high | 1 | on
  time.sleep(waitingTime); 
  GPIO.output(pin, GPIO.LOW) #setting pin output as low | 0 | off
+ time.sleep(waitingTime);
  counter = counter+1
-
+ 
 GPIO.cleanup()
